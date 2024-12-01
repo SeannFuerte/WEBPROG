@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seann Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="intro" class="intro">
+        <h1>Hi! I'm Seann William Fuerte</h1>
+        <button id="showMoreBtn" onclick="showAll()">Show More</button>
+    </div>
+    <script src="indx.js"></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+        
+        <script>
+         document.addEventListener('DOMContentLoaded', () => {
+         const sr = ScrollReveal({
+        distance: '50px',
+        duration: 1000,
+        easing: 'ease-in-out',
+        reset: true,
+    });
+
+    sr.reveal('.hero-content', { delay: 400 });
+    sr.reveal('.slider-container .slider-content', { delay: 400 });
+    sr.reveal('.hero-content p', { delay: 200 });
+    sr.reveal('#about h1', { delay: 200 });
+    sr.reveal('.container-skills h1', { delay: 200 });
+    sr.reveal('.skill', { delay: 200 });
+    sr.reveal('.contact-form', { delay: 200 });
+});
+</script>
+
+</body>
+</html>
+
